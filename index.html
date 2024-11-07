@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Prologue by HTML5 UP</title>
+		<title>Qusai Alabbassi</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -21,8 +21,8 @@
 					<!-- Logo -->
 						<div id="logo">
 							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">Jane Doe</h1>
-							<p>Hyperspace Engineer</p>
+							<h1 id="title">Qusai Alabbassi</h1>
+							<p>Sustainable Energy Specialist</p>
 						</div>
 
 					<!-- Nav -->
@@ -41,11 +41,9 @@
 
 					<!-- Social Icons -->
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://www.linkedin.com/in/qusai-alabbassi/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://twitter.com/Qusai_Alabbassi" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+							<li><a href="https://github.com/Qusai-Alabbassi" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
 						</ul>
 
 				</div>
@@ -60,14 +58,13 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
-								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-								<p>Ligula scelerisque justo sem accumsan diam quis<br />
-								vitae natoque dictum sollicitudin elementum.</p>
+								<h2 class="alt">Hi! I'm <strong>Qusai</strong>, a <a href="https://www.undp.org/asia-pacific/sustainable-energy" target="_blank">Sustainable Energy</a> Systems and<br /> 
+								<a href="https://education.nationalgeographic.org/resource/all-about-climate/" target="_blank">Climate</a> Advocate. </h2>
+								<p>Your Partner in Energy Transition and Climate Action.</p>
 							</header>
 
 							<footer>
-								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+								<a href="#portfolio" class="button scrolly">Value Proposition</a>
 							</footer>
 
 						</div>
@@ -81,10 +78,8 @@
 								<h2>Portfolio</h2>
 							</header>
 
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
+							<p>Guided by a commitment to sustainable energy and climate resilience, I drive impactful solutions in renewable energy and climate adaptation. Through innovation and strategic partnerships, 
+						        I work to empower communities and create a sustainable, equitable future.</p>
 
 							<div class="row">
 								<div class="col-4 col-12-mobile">
@@ -144,12 +139,13 @@
 
 							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
 
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
+							<p>Energy, Climate, and Sustainability Specialist with seven years of 
+							experience in green investment development, climate resilience, 
+							and low-carbon growth. Demonstrates strong capabilities in leading cross-sectoral 
+							climate programs aligned with international standards. Holds a master's with distinction 
+							in Sustainable Energy Systems from a top United Kingdom university, with focus on energy modelling, 
+							green finance, carbon pricing, and climate mitigation projects.</p>
+
 
 						</div>
 					</section>
@@ -162,13 +158,11 @@
 								<h2>Contact</h2>
 							</header>
 
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-
-							<form method="post" action="#">
-								<div class="row">
+							<p>Let’s transform ideas into impactful solutions. Contact me to build 
+							smart partnerships that drive sustainable energy and climate resilience.</p>
+							
+							<form id="contactForm">
+							     <div class="row">
 									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
 									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
 									<div class="col-12">
@@ -182,7 +176,41 @@
 
 						</div>
 					</section>
+<!-- Include EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+    // Initialize EmailJS with your Public Key
+    (function() {
+        emailjs.init("-LnGzD8Ypb9850aIJ"); // Replace with your EmailJS public key
+    })();
 
+    // Form submission handler
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Collect form data
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Set up email parameters
+        const templateParams = {
+            name: name,
+            email: email,
+            message: message,
+        };
+
+        // Send the email using EmailJS
+        emailjs.send("service_uf5fp94", "template_npf49bn", templateParams)
+            .then(function(response) {
+                alert("Message sent successfully!"); // Success message
+                document.getElementById('contactForm').reset(); // Clear the form
+            }, function(error) {
+                alert("Failed to send the message. Please try again."); // Error message
+                console.log("EmailJS error:", error); // Log error for debugging
+            });
+    });
+</script>
 			</div>
 
 		<!-- Footer -->
@@ -190,7 +218,7 @@
 
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; 2024 All rights reserved.</li><li>Developed By Qusai Alabbassi</li>
 					</ul>
 
 			</div>
